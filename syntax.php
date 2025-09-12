@@ -16,7 +16,7 @@
 </br>
 <?php echo "Tu funkcja echo" ?>
 </br>
-<?php echo (Tu funkcja echo) ?>
+<?php echo ("Tu funkcja echo") ?>
 </br>
 
 <!-- zadanie 2 -->
