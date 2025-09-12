@@ -14,13 +14,9 @@ $calkowita ='-5555555';
 $liczba_zmiennoprzecinkowa ='0.50050505';
 $bol =true;
 #zadanie 2
-</br>;
 echo $ciag_znakow;
-</br>;
 var_dump $calkowita;
-</br>;
 echo $liczba_zmiennoprzecinkowa;
-</br>;
 var_dump $bol;
 #zadanie 3
 define ('czoko');
