@@ -10,8 +10,6 @@
     <!-- zadanie 1 -->
 <?php echo "Tu " . "funkcja " . "echo " ?> 
 </br>
-<?= "Tu " . "funkcja " . "echo " ?>
-</br>
 <?php echo 'Tu ' . 'funkcja ' . 'echo ' ?>
 </br>
 <?php echo "Tu funkcja echo" ?>
