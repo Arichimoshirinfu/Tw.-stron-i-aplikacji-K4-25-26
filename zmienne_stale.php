@@ -15,13 +15,13 @@ $liczba_zmiennoprzecinkowa ='0.50050505';
 $bol =true;
 
 #zadanie 2
-<br>
+<br>;
 echo $ciag_znakow;
-<br>
+<br>;
 var_dump $calkowita;
-<br>
+<br>;
 echo $liczba_zmiennoprzecinkowa;
-<br>
+<br>;
 var_dump $bol;
 
 #zadanie 3
