@@ -10,9 +10,9 @@
     <!-- zadanie 1 -->
 <?php echo "Tu " . "funkcja " . "echo " ?> 
 </br>
-<?= "Tu" . "funkcja" . "echo" ?>
+<?= "Tu " . "funkcja " . "echo " ?>
 </br>
-<?php echo 'Tu' . 'funkcja' . 'echo' ?>
+<?php echo 'Tu ' . 'funkcja ' . 'echo ' ?>
 </br>
 <?php echo "Tu funkcja echo" ?>
 </br>
@@ -20,11 +20,11 @@
 <!-- zadanie 2 -->
 <?php print 'Zgłasza się funkcja print' ?>
 </br>
-<?php print 'Zgłasza' . 'się' . 'funkcja' . 'print' ?>
+<?php print 'Zgłasza ' . 'się ' . 'funkcja ' . 'print ' ?>
 </br>
 
 <!-- zadanie 3 -->
-<?= "jeden" . "dwa" . "trzy" ?>
+<?= "jeden " . "dwa " . "trzy " ?>
 </br>
 <?= "stodwadzieściaosiemtyięcy" ?>
 </br>
