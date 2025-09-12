@@ -10,7 +10,7 @@
 <?php 
 #zadanie 1
 $ciag_znakow = 123456
-$liczba_calkowita = -5555555
+$calkowita = -5555555
 $liczba_zmiennoprzecinkowa = 0.50050505
 $bol = true
 
@@ -18,7 +18,7 @@ $bol = true
 <br>
 echo $ciag_znakow
 <br>
-var_dump $liczba_calkowita
+var_dump $calkowita
 <br>
 echo $liczba_zmiennoprzecinkowa
 <br>
