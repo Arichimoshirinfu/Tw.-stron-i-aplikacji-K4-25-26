@@ -9,27 +9,27 @@
     
 <?php 
 #zadanie 1
-$ciag_znakow ='123456'
-$calkowita ='-5555555'
-$liczba_zmiennoprzecinkowa ='0.50050505'
-$bol =true
+$ciag_znakow ='123456';
+$calkowita ='-5555555';
+$liczba_zmiennoprzecinkowa ='0.50050505';
+$bol =true;
 
 #zadanie 2
 <br>
-echo $ciag_znakow
+echo $ciag_znakow;
 <br>
-var_dump $calkowita
+var_dump $calkowita;
 <br>
-echo $liczba_zmiennoprzecinkowa
+echo $liczba_zmiennoprzecinkowa;
 <br>
-var_dump $bol
+var_dump $bol;
 
 #zadanie 3
-define ('czoko')
-define ("koczo")
+define ('czoko');
+define ("koczo");
 
-print czoko
-var_export koczo
+print czoko;
+var_export koczo;
 
 
 ?>
