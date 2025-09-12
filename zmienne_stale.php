@@ -15,9 +15,9 @@ $liczba_zmiennoprzecinkowa ='0.50050505';
 $bol =true;
 #zadanie 2
 echo $ciag_znakow;
-var_dump $calkowita;
+var_dump($calkowita);
 echo $liczba_zmiennoprzecinkowa;
-var_dump $bol;
+var_dump ($bol);
 #zadanie 3
 define ('czoko');
 define ("koczo");
