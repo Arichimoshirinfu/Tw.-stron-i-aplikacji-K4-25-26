@@ -22,7 +22,7 @@ var_dump ($bol);
 define ('czoko');
 define ("koczo");
 print czoko;
-var_export koczo;
+var_export(koczo);
 ?>
 <p> </p>
 </body>
