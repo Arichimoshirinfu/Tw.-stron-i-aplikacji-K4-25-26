@@ -9,10 +9,10 @@
     
 <?php 
 #zadanie 1
-$ciag_znakow = '123456'
-$calkowita = '-5555555'
-$liczba_zmiennoprzecinkowa = '0.50050505'
-$bol = true
+$ciag_znakow ='123456'
+$calkowita ='-5555555'
+$liczba_zmiennoprzecinkowa ='0.50050505'
+$bol =true
 
 #zadanie 2
 <br>
