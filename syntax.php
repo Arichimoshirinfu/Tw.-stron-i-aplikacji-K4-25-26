@@ -8,7 +8,8 @@
 <body>
 
     <!-- zadanie 1 -->
-<?php echo "Tu" . "funkcja" . "echo" ?>
+<?php echo "Tu " . "funkcja " . "echo " ?> 
+</br>
 <?= "Tu" . "funkcja" . "echo" ?>
 <?php echo 'Tu' . 'funkcja' . 'echo' ?>
 <?php echo "Tu funkcja echo" ?>
