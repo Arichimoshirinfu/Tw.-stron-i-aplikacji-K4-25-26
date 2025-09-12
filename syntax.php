@@ -17,6 +17,7 @@
 <?php echo "Tu funkcja echo" ?>
 </br>
 <?php echo (Tu funkcja echo) ?>
+</br>
 
 <!-- zadanie 2 -->
 <?php print 'Zgłasza się funkcja print' ?>
