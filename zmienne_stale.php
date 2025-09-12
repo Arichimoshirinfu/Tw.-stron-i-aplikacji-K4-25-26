@@ -13,7 +13,6 @@ $ciag_znakow ='123456';
 $calkowita ='-5555555';
 $liczba_zmiennoprzecinkowa ='0.50050505';
 $bol =true;
-
 #zadanie 2
 </br>;
 echo $ciag_znakow;
@@ -23,18 +22,12 @@ var_dump $calkowita;
 echo $liczba_zmiennoprzecinkowa;
 </br>;
 var_dump $bol;
-
 #zadanie 3
 define ('czoko');
 define ("koczo");
-
 print czoko;
 var_export koczo;
-
-
 ?>
 <p> </p>
-
-
 </body>
 </html>
