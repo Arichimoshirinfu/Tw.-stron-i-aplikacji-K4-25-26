@@ -39,15 +39,15 @@ $bol =true;
 <?php #zadanie 3 ?>
 <?php 
 define("pierwsza" , "1994");
-define("druga" , "Miramax");
+define("ononn" , "Miramax");
 ?>
 <hr>
 <?php echo "print dla pierwszej stałej: " , print pierwsza; ?> <br>
-<?php echo "print dla drugiej stałej: " , print druga ?> <br>
+<?php echo "print dla drugiej stałej: " , print ononn ?> <br>
 <hr>
 <?php echo "var_export dla pierwszej stałej: " , var_export(pierwsza) ?>
 <br>
-<?php echo "var_export dla drugiej stałej: " , var_export(druga) ?>
+<?php echo "var_export dla drugiej stałej: " , var_export(ononn) ?>
 
 </body>
 </html>
