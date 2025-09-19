@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    .ramka{
-        color:#CED166;
-        border-color:#FF38F6;
+    .ramka {
+        border-color:blue;
+        color:red;
         border: 2px;
         border-style:solid;
-        padding:10px; 
-        text-shadow: 2px 2px #8312B0;
+        padding:10px;
+        text-shadow: 1px 1px;
     }
 </style>
 </head>

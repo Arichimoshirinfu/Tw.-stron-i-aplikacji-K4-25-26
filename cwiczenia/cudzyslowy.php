@@ -14,6 +14,6 @@
     <br>
     <?php echo ' $poczatek $liczba $koniec a chce mieć jeszcze dwa.' ?>
     <br>
-    <?php  echo " $poczatek $liczba $koniec a chce mieć jeszcze dwa." ?>
+   <p> <?php echo $poczatek . $liczba . $koniec ?> a chce mieć jeszcze dwa. </p>
 </body>
 </html>
