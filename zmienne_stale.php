@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    .ramka{
+        color:#CED166;
+        border-color:#FF38F6;
+        border: 2px;
+        border-style:solid;
+        padding:10px; 
+        text-shadow: 2px 2px #8312B0;
+    }
+</style>
 </head>
+
+
 <body>
     
 <?php 
@@ -13,41 +25,73 @@ $ciag_znakow ='Ala ma kota';
 $calkowita ='-5555555';
 $liczba_zmiennoprzecinkowa ='0.50050505';
 $bol =true;
+
+define("pierwsza" , "1994");
+define("ononn" , "Miramax");
 ?>
+
 <h3>
-<?php#zadanie 2 ?>
-<?php echo "echo dla ciągu znaków: " . $ciag_znakow; ?>
+
+<?php #zadanie 2 ?>
+
+<p> echo dla ciągu znaków: <span class='ramka'> 
+<?php echo $ciag_znakow;?> </span> </p>
 <br>
-<?php echo "echo dla liczby całkowitej " . $calkowita; ?>
+
+<p> echo dla liczby całkowitej: <span class='ramka'> 
+<?php echo $calkowita; ?> </span></p>
 <br>
-<?php echo "echo dla liczby rzeczywistej: " . $liczba_zmiennoprzecinkowa; ?>
+
+<p> echo dla liczby rzeczywistej: <span class='ramka'>
+<?php echo $liczba_zmiennoprzecinkowa; ?> </span>
 <br>
-<?php echo "echo dla wartości bool'owskiej: " . $bol; ?>
+
+<p> echo dla wartości bool'owskiej <span class='ramka'> 
+<?php echo $bol; ?> </span></p>
 <br>
+
 <h3>
 <hr>
 
-<?php echo "var_dump dla ciągu znaków: " , var_dump($ciag_znakow) ?>
+<p> var_dump dla ciągu znaków: <span class='ramka'>
+<?php var_dump($ciag_znakow) ?> </span></p>
 <br>
-<?php echo " var_dump dla liczby całkowitej: " , var_dump($calkowita) ?>
+
+<p> var_dump dla liczby całkowitej: <span class='ramka'>
+<?php var_dump($calkowita) ?> </span></p>
 <br>
-<?php echo " var_dump dla liczby rzeczywistej: " , var_dump($liczba_zmiennoprzecinkowa) ?>
+
+<p> var_dump dla liczby rzeczywistej: <span class='ramka'>
+<?php var_dump($liczba_zmiennoprzecinkowa) ?> </span> </p>
 <br>
-<?php echo "var_dump dla wartości bool'owskiej: " , var_dump($bol) ?>
+
+<p> var_dump dla wartości bool'owskiej: <span class='ramka'>
+<?php var_dump($bol) ?> </span> </p>
 <br>
 
 <?php #zadanie 3 ?>
 <?php 
-define("pierwsza" , "1994");
-define("ononn" , "Miramax");
+
 ?>
 <hr>
-<?php echo "print dla pierwszej stałej: " , print pierwsza; ?> <br>
-<?php echo "print dla drugiej stałej: " , print ononn ?> <br>
-<hr>
-<?php echo "var_export dla pierwszej stałej: " , var_export(pierwsza) ?>
+
+<p> print dla pierwszej stałej: define <span class='ramka'>
+<?php print pierwsza; ?> </span> </p>
 <br>
-<?php echo "var_export dla drugiej stałej: " , var_export(ononn) ?>
+
+<p> print dla drugiej stałej: <span class='ramka'>
+<?php print ononn ?> </span> </p>
+<br>
+
+<hr>
+
+<p> var_export dla pierwszej stałej: <span class='ramka'>
+<?php var_export(pierwsza) ?> </span> </p>
+<br>
+
+<p> var_export dladrugiej stałej:<span class='ramka'>
+<?php var_export(ononn) ?> </span> </p>
+<br>
 
 </body>
 </html>
