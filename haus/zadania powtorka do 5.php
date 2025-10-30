@@ -55,6 +55,20 @@ define("szanel" , "rakkun to");
 <?php var_export(szanel) ?> <br>
 
 
+<?php  
+    var_dump($malpa1)
+?>
+<br>
+<?= "kokolakocipiasamnida koko szanel" ?>
+<br>
+<?php 
+echo koko . "$malpa1 ";
+print szanel;
+?>
+
+<br>
+<?php define("sperma" , "kutas")?>
+<?php print sperma ?>
 
 </body>
 </html>
