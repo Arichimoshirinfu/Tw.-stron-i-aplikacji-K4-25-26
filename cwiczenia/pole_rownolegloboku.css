@@ -1,0 +1,10 @@
+p{
+    text-align:center;
+    color:blue;
+    border-color:orange;
+    border-right-width:2px;
+    border-left-width:2px;
+    border-bottom-width:30px;
+    border-top-width:30px;
+    border-style: solid;
+}
