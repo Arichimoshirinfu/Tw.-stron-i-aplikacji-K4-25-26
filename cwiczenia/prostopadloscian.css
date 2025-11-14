@@ -1,0 +1,27 @@
+.fiolet{
+    color:violet;
+    font-size:1.5em;
+    text-transform:capitalize;
+    font-weight: 600;
+}
+span.obrot{
+    writing-mode: vertical-rl;
+}
+span.obrot2{
+    transform:rotate(-90deg);
+    display:inline-block;
+}
+.purpur{
+    color:purple;
+    font-size:25px;
+    font-weight:600;
+    text-decoration: overline;
+}
+.pisanie{
+    transform:rotateY(180deg);
+    display:inline-block;
+}
+.pisanie2{
+    transform:rotate(0deg);
+    display:inline-block;
+}
