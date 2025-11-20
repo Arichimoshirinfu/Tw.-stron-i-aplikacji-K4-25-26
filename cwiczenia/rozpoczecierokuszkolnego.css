@@ -2,5 +2,7 @@ p{
     background-color:lightsteelblue;
     border: 2px, dotted, blueviolet;
     border-radius: 5px;
+    font-style:italic;
+    padding:15px;
     
 }
