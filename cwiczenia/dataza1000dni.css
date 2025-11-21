@@ -1,0 +1,12 @@
+.abc{
+    color:lightpink;
+    padding:20px;
+    border: 2px dashed lightpink;
+}
+.def{
+    color:lightcoral;
+    padding:20px;
+    border-width:2px;
+    border-style:dashed;
+    border-color:lightcoral;
+}

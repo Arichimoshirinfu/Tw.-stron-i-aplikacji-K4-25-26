@@ -1,0 +1,19 @@
+body{
+    font-size:20px;
+}
+p{
+    padding:5px;
+}
+.one{
+    color:yellowgreen;
+    border-bottom: 2px dotted green;
+}
+.two{
+    color:maroon;
+    border: 2px dashed maroon;
+    border-radius:5px;
+}
+.three{
+    color:darkcyan;
+    border-left: 3px solid cyan;
+}
