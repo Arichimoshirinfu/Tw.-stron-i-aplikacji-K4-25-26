@@ -20,9 +20,10 @@
 
     <?php 
     $bitwa_obj=date_create($databitwy);
-    $teraz_obj=date_create($teraz);
+    $teraz_obj=date_create("now");
+    $roznica=date_diff($teraz_obj, $bitwa_obj);
     ?>
-
-    <p> Bitwa pod Tannenbergiem była 26.08.1914 i było to <?php print date_diff($teraz, $bitwa) ?> dni temu </p>
+    <p> Bitwa pod Tannenbergiem była 26.08.1914 i było to <?php print date_diff($teraz_obj, $bitwa_obj)->format("%a dni") ?> temu </p>
+    <p> Bitwa pod Tannenbergiem była 26.08.1914 i było to <?php echo $roznica->format("%a dni") ?> temu </p>
 </body>
 </html>
