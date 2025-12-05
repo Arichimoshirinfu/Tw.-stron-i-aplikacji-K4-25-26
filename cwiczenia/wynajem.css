@@ -1,0 +1,14 @@
+body{
+    font-size:x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.php{
+    font-weight:bold;
+}
+div{
+    color:crimson;
+    background-color:lightgoldenrodyellow;
+    border-radius:15px;
+    border:1px lightgoldenrodyellow solid;
+    padding:5px;
+}
