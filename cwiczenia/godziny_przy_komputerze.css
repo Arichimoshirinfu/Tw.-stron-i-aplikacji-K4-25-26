@@ -1,0 +1,24 @@
+table{
+    border-collapse: collapse;
+    font-family:Arial, Helvetica, sans-serif;
+    table-layout: fixed;
+    width:100%;
+}
+th, td{
+    border: medium double black;
+    padding:10px;
+    
+}
+#puste{
+    border: none;
+}
+.date{
+    box-shadow:0 0 5px red; 
+    font-family:courier;
+    font-weight: bold;
+}
+#niebo{
+    background-color:lightskyblue;
+    font-weight:bold;
+    border-radius:5px;
+}

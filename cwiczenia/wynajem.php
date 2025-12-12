@@ -23,7 +23,7 @@
 
     <p> Cena najmu: <span class="php"> <?= $cena ?> </span> zł (netto/dzień) </p>
 
-    <p> Całkowity koszt najmu: <span class="php"> <?php echo $roznica_obj->format("%a") * $cena * 1.23?> </span> zł (brutto) [VAT=23%] </p>
+    <p> Całkowity koszt najmu: <span class="php"> <?php echo number_format($roznica_obj->format("%a") * $cena * 1.23, 2, ",", "")?> </span> zł (brutto) [VAT=23%] </p>
 
 </div>
 </body>
