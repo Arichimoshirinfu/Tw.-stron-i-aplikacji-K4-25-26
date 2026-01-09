@@ -11,7 +11,7 @@
     <?php 
 
     $pon1=strtotime("12:00");
-    $pon2=strtotime("15:30");
+    $pon2=strtotime("20:55");
     $wt1=strtotime("08:05");
     $wt2=strtotime("10:15");
     $sr1=strtotime("06:45");
@@ -26,7 +26,7 @@
     $nied2=strtotime("18:50");
 
     $pon1_obj=date_create("12:00");
-    $pon2_obj=date_create("15:30");
+    $pon2_obj=date_create("20:55");
     $wt1_obj=date_create("08:05");
     $wt2_obj=date_create("10:15");
     $sr1_obj=date_create("06:45");
@@ -148,6 +148,49 @@
             <span class="date"> <?php echo "$nied_roz_h:$nied_roz_m" ?></span> 
             ( <span id="niebo"> <?= $nied_roz_h * 60 + $nied_roz_m ?></span> minut )
             </td>
+
+        </tr>
+
+<?php 
+$suma_minut= $nied_roz_h * 60 + $nied_roz_m + $sob_roz_h * 60 + $sob_roz_m + $pt_roz_h * 60 + $pt_roz_m + $czw_roz_h * 60 + $czw_roz_m + $sr_roz_h * 60 + $sr_roz_m + $wt_roz_h * 60 + $wt_roz_m + $pon_roz_h * 60 + $pon_roz_m;
+$srednia_min= $suma_minut / 7;
+$srednie_godz= intdiv($srednia_min,60);
+$srednie_min=$srednia_min % 60;
+?>
+
+        <tr>
+
+            <td id="puste"></td>
+
+            <td style="text-align: center;" colspan="7"> 
+            <strong>Suma:</strong> <span class="date">
+            <?php echo intdiv($suma_minut,60) ?>:<?= $suma_minut % 60 ?></span>
+            (<span id="niebo">  <?php echo $suma_minut ?> </span> minut) 
+            </td>
+
+        </tr>
+
+        <tr>
+
+        <td id="puste"></td>
+
+        <td style="text-align: center;" colspan="7" > 
+            <strong>Średnio dziennie:</strong>
+             <span class="date"><?= $srednie_godz ?>:<?= $srednie_min ?></span>
+            (<span id="niebo"><?= round($srednia_min,4) ?></span> minut)
+        </td>
+
+        </tr>
+        
+        <tr>
+
+        <td id="puste"></td>
+        <td style="text-align: center;" colspan="7">
+        <strong>Suma [dni : godziny : minuty : sekundy]</strong>
+        <span class=date>
+        <?= floor($suma_minut / 60 / 24)?>:<?= str_pad(intdiv($suma_minut,60)%24, 2, "0", STR_PAD_LEFT) ?>:<?= str_pad($suma_minut % 60, 2, "0", STR_PAD_LEFT) ?>:<?= str_pad(intdiv($suma_minut,(60*60)), 2, "0" , STR_PAD_LEFT)?>
+        </span>
+        </td>
 
         </tr>
 
