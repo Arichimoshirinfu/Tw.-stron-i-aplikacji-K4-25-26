@@ -11,7 +11,7 @@
     <?php 
 
     $pon1=strtotime("12:00");
-    $pon2=strtotime("20:55");
+    $pon2=strtotime("23:55");
     $wt1=strtotime("08:05");
     $wt2=strtotime("10:15");
     $sr1=strtotime("06:45");
@@ -26,7 +26,7 @@
     $nied2=strtotime("18:50");
 
     $pon1_obj=date_create("12:00");
-    $pon2_obj=date_create("20:55");
+    $pon2_obj=date_create("23:55");
     $wt1_obj=date_create("08:05");
     $wt2_obj=date_create("10:15");
     $sr1_obj=date_create("06:45");
@@ -164,7 +164,7 @@ $srednie_min=$srednia_min % 60;
 
             <td style="text-align: center;" colspan="7"> 
             <strong>Suma:</strong> <span class="date">
-            <?php echo intdiv($suma_minut,60) ?>:<?= $suma_minut % 60 ?></span>
+            <?php echo intdiv($suma_minut,60) ?>:<?= str_pad($suma_minut % 60,2,"0",STR_PAD_LEFT) ?></span>
             (<span id="niebo">  <?php echo $suma_minut ?> </span> minut) 
             </td>
 
@@ -176,7 +176,7 @@ $srednie_min=$srednia_min % 60;
 
         <td style="text-align: center;" colspan="7" > 
             <strong>Średnio dziennie:</strong>
-             <span class="date"><?= $srednie_godz ?>:<?= $srednie_min ?></span>
+             <span class="date"><?= str_pad($srednie_godz,2,"0",STR_PAD_LEFT) ?>:<?= $srednie_min ?></span>
             (<span id="niebo"><?= round($srednia_min,4) ?></span> minut)
         </td>
 
