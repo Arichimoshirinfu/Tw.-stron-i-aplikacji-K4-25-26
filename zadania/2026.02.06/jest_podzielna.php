@@ -68,7 +68,7 @@
         if ($losowa % 9 == 0)
             echo ("<li>dziewięć</li>");
         ?>
-
+        
     </ul>
 
 </body>
