@@ -1,0 +1,2 @@
+Wyswietl w cmd liczby od -20 do 0 oddzielone "|" za pomocą funkcji for
+od (-20) do 0

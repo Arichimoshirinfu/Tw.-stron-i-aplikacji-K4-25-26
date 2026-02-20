@@ -1,0 +1,13 @@
+table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed
+}
+td{
+    background-color:aliceblue;
+    border: solid dodgerblue 1px;
+    padding-bottom:10px;
+    padding-top:10px;
+    color:blue;
+    text-align:center;
+}
