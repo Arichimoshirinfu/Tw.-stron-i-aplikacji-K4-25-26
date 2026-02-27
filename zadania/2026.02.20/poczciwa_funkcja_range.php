@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         pre,p{
-            border: 1px double $rgba(83, 34, 34, 1);
+            border: 1px double rgba(83, 34, 34, 1);
             box-shadow: 1px 1px 5px black;
             width:300px;
             height:200px;
