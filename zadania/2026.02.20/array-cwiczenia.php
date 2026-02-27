@@ -24,6 +24,6 @@
     echo $arraykeyexists
     ?>
 
-    <p>Funkcja sprawdza czy tablica zawiera </p>
+    <p>Funkcja sprawdza czy tablica zawiera klucze</p>
 </body>
 </html>
