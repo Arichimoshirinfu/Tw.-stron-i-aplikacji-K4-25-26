@@ -8,7 +8,7 @@
 <body>
     
     <?php
-    $array =  array(1,2,3,4,5,6,7,8,9,10)
+    $array =  array(1=>"kkoko",2,3,4,5,6,7,8,9,10)
     ?>
 
     <h2>Funkcja <code>array_fill</code> :</h2>
@@ -25,5 +25,14 @@
     ?>
 
     <p>Funkcja sprawdza czy tablica zawiera klucze</p>
+
+    <?php 
+    $r=0;
+    do{
+        echo "$r";
+        $r++;
+    }
+    while($r <=10)
+    ?>
 </body>
 </html>
