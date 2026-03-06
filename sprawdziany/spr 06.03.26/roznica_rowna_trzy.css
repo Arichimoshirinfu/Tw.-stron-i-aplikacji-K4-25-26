@@ -1,0 +1,13 @@
+table{
+border-collapse:collapse;
+}
+td,th{
+    border: dotted green 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding:5px;
+}
+.help{
+    color:red;
+    background-color: yellow;
+}

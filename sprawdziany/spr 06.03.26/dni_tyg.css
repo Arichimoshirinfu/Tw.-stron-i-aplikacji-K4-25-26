@@ -1,0 +1,10 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    border: solid 2px black;
+    padding:20px;
+}
+.sr{
+    background-color: cyan;
+}

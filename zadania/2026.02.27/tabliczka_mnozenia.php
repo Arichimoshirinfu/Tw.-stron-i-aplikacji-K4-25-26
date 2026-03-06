@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="tamn.css">
+    <link rel="stylesheet" href="help.css">
 </head>
 <body>
     
@@ -12,7 +12,7 @@
         <?php 
         for ($c=0;$c<=10;$c++)
             if ($c == 0)
-                echo "<td>X</td>";
+                echo "<th>X</th>";
             else
                 echo "<th>$c</th>";
 

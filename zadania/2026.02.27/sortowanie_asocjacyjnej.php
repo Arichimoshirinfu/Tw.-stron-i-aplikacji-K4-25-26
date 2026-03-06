@@ -9,6 +9,18 @@
 <body>
     
     <?php 
+    $tablicarrniar = array(
+        "Skazani na Shawshank" => "dramat",
+        "Nietykalni" => "biograficzny",
+        "Władca Pierścieni: Powrót króla" => "fantasy",
+        "Pulp Fiction" => "gangsterski",
+        "Siedem" => "kryminał",
+        "Podziemny krąg" => "thriller",
+        "Django" => "western",
+        "Król Lew" => "animacja",
+        "Avengers: Wojna bez granic" => "akcja",
+        "Dobry, zły i brzydki" => "western",
+    );
     $tablica = [
         "Skazani na Shawshank" => "dramat",
         "Nietykalni" => "biograficzny",
@@ -86,6 +98,22 @@
                 echo "<tr><td>$warros</td><td>$warros2</td></tr>"; 
             ?>
     </table>
+    <br>
+    <?php 
+    $jeden=2421;
+    do{
+        echo "$jeden|||";
+        $jeden++;
+    }
+    while($jeden <= 2425);
+?>
+<br>
+<?php
+$dwa=2420;
+    while($jeden <= 2430){
+        echo "$jeden||||";
+        $jeden++;}
+    ?>
 
 </body>
 </html>

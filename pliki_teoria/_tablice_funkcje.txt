@@ -1,25 +1,25 @@
-array_fill()
-array_key_exists()
-array_keys()
-array_pop() 
-array_push() 
-array_reverse() 
-array_search()
-array_slice()
-array_unique() 
-array_values() 
+array_fill() - zapelnia tabele ta sama wartoscia
+array_key_exists() - sprawdza czy w tabeli jest klucz
+array_keys()  - pokazuje wszystkie klucze w tabeli
+array_pop() - usuwa ostatni element tabeli
+array_push() - dodaje kolejny element tabeli
+array_reverse() - odwraca kolejnosc tabeli
+array_search() - szuka informacji w tabeli
+array_slice() - wyciaga czesc tabeli
+array_unique() - usuwa duplikaty w tabeli
+array_values() - pokazuje wszystkie wartosci w tabeli
 
-count()
-explode() 
-in_array() 
-is_array() 
-range() 
-list() 
-shuffle() 
+count() - liczy ilosc wpisow w tabeli od 1
+explode() - tworzy tabele z tekstu
+in_array() - sprawdza czy element jest w tabeli
+is_array() - sprawdza czy element jest tablica
+range() - tworzy tablice np. od 1 do 10 z krokiem 2
+list() - dodaje do wartosci klucze
+shuffle() - losowa przeklada elementy tabeli 
 
-sort() 
-rsort() 
-asort() 
-ksort() 
-arsort()
-krsort() 
+sort() - sortuje elementy w tabeli rosnaco
+rsort() - sortuje elementy w tabeli malejaco
+asort() - sortuje wartosci w tabeli rosnaco
+ksort() - sortuje klucze w tabeli rosnaco
+arsort()- sortuje wartosci w tabeli malejaco
+krsort() - sortuje klucze w tabeli rosnaco
