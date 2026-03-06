@@ -7,14 +7,10 @@
 </head>
 <body>
     
-    <a href="#">Odnośnik + parametry</a>
+    <a href="http://localhost/Tw.-stron-i-aplikacji-K4-25-26/zadania/2026.03.06/uniform_resource_locator.php?page=14&table=events_taxonomies&v=NTyBGd6RV20">Odnośnik + parametry</a>
+    <hr>
     <pre>
     <?php 
-    $_GET = [
-        "page" => "14",
-        "table" => "events_taxonomies",
-        "v" => "NTyBGd6RV20"
-    ];
     print_r($_GET)
     ?>
     </pre>
