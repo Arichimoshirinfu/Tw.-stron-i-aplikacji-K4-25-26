@@ -8,9 +8,20 @@
 <body>
     
     <form action="">
-    
-    
+
+    <label for="login">Login</label>
+    <input type="text" name="login">
+    <br>
+    <label for="pass">Hasło</label>
+    <input type="password" name="haslo">
+    <br>
+    <button type="submit">Zaloguj</button>
+
     </form>
 
+
+    <pre>
+        <?php print_r($_GET) ?>
+    </pre>
 </body>
 </html>
