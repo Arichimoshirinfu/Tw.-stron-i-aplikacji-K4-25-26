@@ -7,9 +7,9 @@
 </head>
 <body>
     <ol>
-    <li style="list-style-type:lower-greek">server software: <?php echo $_SERVER['SERVER_SOFTWARE'] ?></li>
+    <li style="list-style-type:lower-greek">oprogramowanie serwera: <?php echo $_SERVER['SERVER_SOFTWARE'] ?></li>
 
-    <li style="list-style-type:lower-greek">oprogramowanie klienta: <?php echo $_SERVER['USER_AGENT'] ?></li>
+    <li style="list-style-type:lower-greek">oprogramowanie klienta: <?php echo $_SERVER['HTTP_USER_AGENT'] ?></li>
 
     <li style="list-style-type:lower-greek">nazwa i wersja protokołu użytego podczas odbierania żądania od klienta: <?php echo $_SERVER['SERVER_PROTOCOL'] ?></li>
 

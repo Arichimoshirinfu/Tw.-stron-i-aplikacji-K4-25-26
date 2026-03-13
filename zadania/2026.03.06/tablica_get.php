@@ -10,12 +10,12 @@
     <form action="">
 
     <label for="login">Login</label>
-    <input type="text" name="login">
+    <input type="text" name="login" placeholder="login">
     <br>
     <label for="pass">Hasło</label>
-    <input type="password" name="haslo">
+    <input type="password" name="haslo" placeholder="hasło">
     <br>
-    <button type="submit">Zaloguj</button>
+    <button type="submit" name="send" value="wyslij"> Wyślij</button>
 
     </form>
 

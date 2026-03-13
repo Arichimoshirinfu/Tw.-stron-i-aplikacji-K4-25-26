@@ -1,0 +1,10 @@
+table{
+    border-collapse: collapse;
+}
+td,th,tr{
+    border: 1px dotted red
+}
+.black{
+    background-color: black;
+    color:white;
+}
