@@ -22,5 +22,6 @@
     <li style="list-style-type:lower-greek">metoda jaką zostało obsłużone żądanie: <?php echo $_SERVER['REQUEST_METHOD'] ?></li>
 
     </ol>
+     
 </body>
 </html>
