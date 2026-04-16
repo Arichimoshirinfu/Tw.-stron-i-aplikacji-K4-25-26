@@ -46,19 +46,19 @@
 
     <label for="role">Wybierz jedną rolę:</label><span class='error'> <?= '* ' . $roleerror ?></span><br>
     
-    <input type="radio" name="rola" id="uzytkownik" value="uzytkownik"  <?php $rola == "uzytkownik" ? 'checked' : '' ?>> <label for="uzytkownik">Użytkownik</label><br> 
+    <input type="radio" name="rola" id="uzytkownik" value="uzytkownik"  <?php if($rola == "uzytkownik") echo 'checked'; else echo ''; ?>> <label for="uzytkownik">Użytkownik</label><br> 
 
-    <input type="radio" name="rola" id="autor" value="autor"  <?php $rola == "autor" ? 'checked' : "" ?>> <label for="autor">Autor</label><br>
+    <input type="radio" name="rola" id="autor" value="autor"  <?php if($rola == "autor") echo 'checked'; else echo ''; ?>> <label for="autor">Autor</label><br>
 
-    <input type="radio" name="rola" id="redaktor" value="redaktor"  <?php $rola == "redaktor" ? 'checked' : "" ?>> <label for="redaktor">Redaktor</label><br>
+    <input type="radio" name="rola" id="redaktor" value="redaktor"  <?php if($rola == "redaktor") echo 'checked'; else echo ''; ?>> <label for="redaktor">Redaktor</label><br>
 
-    <input type="radio" name="rola" id="administrator" value="administrator"  <?php $rola == "administrator" ? 'checked' : "" ?> > <label for="administrator">Administrator</label><br><br>
+    <input type="radio" name="rola" id="administrator" value="administrator"  <?php if($rola == "administrator") echo 'checked'; else echo ''; ?> > <label for="administrator">Administrator</label><br><br>
 
     <input type="submit" value="Zarejestruj" name="zarejestruj">
     </form>
     </fieldset>
     
-        <?= print_r($_POST) ?>
+        <?= print_r($_POST) ?><br>
         <?= $rola ?>
 
     

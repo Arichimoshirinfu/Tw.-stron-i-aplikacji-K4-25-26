@@ -1,0 +1,19 @@
+* {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: center;
+    padding:5px;
+    border: 1px dotted black;
+}
+
+.selected {
+    background-color: pink;
+    color: blueviolet;
+    font-weight: bold;
+}
