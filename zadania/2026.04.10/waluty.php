@@ -54,10 +54,6 @@
                     echo $waluta;
                     }
         }
-        else 
-
-                    $numer = 'BŁĄD';
-                    $waluta = 'null';
     }
     else  
         echo '
