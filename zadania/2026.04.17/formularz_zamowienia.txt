@@ -1,0 +1,20 @@
+2026/04/23 20:04:10
+Array
+(
+    [nazwt] => marcel
+    [opcja_pakowania] => karton
+    [pakowanie] => od10do15kg
+    [email] => hej@hej.ol
+    [info] => platyna w lidze i ostanie miejsce w tft 
+    [przdane] => zgodanadane
+)
+2026/04/23 20:08:13
+Array
+(
+    [nazwt] => igor
+    [opcja_pakowania] => karton z usztywnieniem
+    [pakowanie] => on
+    [email] => kokolala@koko.pl
+    [info] => im the fucking ahri main aaaa!
+    [przdane] => zgodanadane
+)
