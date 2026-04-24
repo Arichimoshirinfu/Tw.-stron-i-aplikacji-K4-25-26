@@ -26,7 +26,7 @@
     <form action="" method="post">
 
     <label  for="nazwt">Nazwa towaru</label><span class=star> *</span><br>
-    <input type="text" name="nazwt" id="nazwt" <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
+    <input type="text" name="nazwt" id="nazwt" value="<?= $_POST['nazwt'] ?? '' ?>" <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
         if(empty($_POST['nazwt'])){ echo 'class="error"'; $blad = True;} ?>><br><span class="star"><?= $errnazwa ?></span><br>
 
 
@@ -37,19 +37,39 @@
         if(empty($_POST['opcja_pakowania'])){ echo 'class="error"' ; $blad = True;}}?>
         >
 
-    <input type="checkbox" name="opcja_pakowania" value="koperta" id="koperta">
+    <input type="checkbox" name="opcja_pakowania[]" value="koperta" id="koperta" 
+    <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
+        if(key_exists('koperta', $_POST['opcja_pakowania']))
+            echo 'checked';
+        ?>>
     <label for="koperta">koperta</label><br>
 
-    <input type="checkbox" name="opcja_pakowania" value="folia" id="folia">
+    <input type="checkbox" name="opcja_pakowania[]" value="folia" id="folia" 
+    <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
+            if(in_array('folia', $_POST['opcja_pakowania']))
+            echo 'checked'
+            ?>>
     <label for="folia">folia</label><br>
 
-    <input type="checkbox" name="opcja_pakowania" value="folia bąbelkowa" id="folia bąbelkowa">
+    <input type="checkbox" name="opcja_pakowania[]" value="folia bąbelkowa" id="folia bąbelkowa"
+    <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
+            if(in_array('folia bąbelkowa', $_POST['opcja_pakowania']))
+            echo 'checked'
+            ?>>
     <label for="folia bąbelkowa">folia bąbelkowa</label><br>
 
-    <input type="checkbox" name="opcja_pakowania" value="karton" id="karton">
+    <input type="checkbox" name="opcja_pakowania[]" value="karton" id="karton"
+    <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
+            if(in_array('karton', $_POST['opcja_pakowania']))
+            echo 'checked'
+            ?>>
     <label for="karton">karton</label><br>
 
-    <input type="checkbox" name="opcja_pakowania" value="karton z usztywnieniem" id="kartonplus">
+    <input type="checkbox" name="opcja_pakowania[]" value="karton z usztywnieniem" id="kartonplus"
+    <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
+            if(in_array('karton z usztywnieniem', $_POST['opcja_pakowania']))
+            echo 'checked'
+            ?>>
     <label for="kartonplus">karton z usztywnieniem</label>
     
     </div>
@@ -63,16 +83,17 @@
         >
     <label for="pakowanie">Podaj wagę paczki:</label><span class=star> *</span><br>
 
-    <input type="radio" name="pakowanie" value="2kg" id="2kg">
+    <input type="radio" name="pakowanie" value="2kg" id="2kg" 
+    <?= in_array('2kg', $_POST) ? 'checked' : '' ?>>
     <label for="2kg">do 2 kg</label><br>
 
-    <input type="radio" name="pakowanie" value="2do5kg" id="2do5kg">
+    <input type="radio" name="pakowanie" value="2do5kg" id="2do5kg" <?= in_array('2do5kg', $_POST) ? 'checked' : '' ?>>
     <label for="2do5kg">od 2 do 5 kg</label><br>
 
-    <input type="radio" name="pakowanie" alue="5do10kg" id="5do10kg">
+    <input type="radio" name="pakowanie" value="5do10kg" id="5do10kg" <?= in_array('5do10kg', $_POST) ? 'checked' : '' ?>>
     <label for="5do10kg">od 5 do 10 kg</label><br>
 
-    <input type="radio" name="pakowanie" value="od10do15kg" id="od10do15kg">
+    <input type="radio" name="pakowanie" value="od10do15kg" id="od10do15kg" <?= in_array('od10do15kg', $_POST) ? 'checked' : '' ?>>
     <label for="od10do15kg">od 10 do 15 kg</label><br>
     </div>
     <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
@@ -82,8 +103,8 @@
 
 
     <label for="email">Email kontaktowy:</label><span class=star> *</span><br>
-    <input class="<?php if($_SERVER['REQUEST_METHOD'] == 'POST')
-        if(empty($_POST['email'])) echo 'error' ?>" type="email" name="email" id="email"><br>
+    <input value="<?= $_POST['email'] ?? '' ?>" class="<?php if($_SERVER['REQUEST_METHOD'] == 'POST')
+        if(empty($_POST['email']) || strpos($_POST['email'], '@') == false) echo 'error' ?>" type="email" name="email" id="email"><br>
         <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
         if(empty($_POST['email'])){ echo '<span class="star">Podaj poprawny adres email</span>'; $blad = True;} ?>
         <br>
@@ -92,8 +113,7 @@
 
     <label for="info">Dodatkowe informacje</label><br>
     <textarea class="<?php if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                            if(strlen($_POST['info']) < 15){ echo 'error'; $blad = True;}} ?>" name="info" id="info">
-    </textarea><br>
+                            if(strlen($_POST['info']) < 15){ echo 'error'; $blad = True;}} ?>" name="info" id="info"><?= $_POST['info'] ?? '' ?></textarea><br>
         <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
                             if(strlen($_POST['info']) < 15) echo '<span class="star">Wiadomość musi mieć conajmniej 15 znaków</span>' ?>
         
@@ -106,8 +126,6 @@
     <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
             if(empty($_POST['przdane'])){ echo '<span class="star">Potwierdź swoją zgodę</span>'; $blad = True;} ?>
     <br><br>
-
-
 
     <button type="submit" value="wyslij">Wyślij</button><br>
     
@@ -132,5 +150,6 @@
         ?>
     
     </form>
+    <pre><?php print_r($_POST) ?></pre>
 </body>
 </html>

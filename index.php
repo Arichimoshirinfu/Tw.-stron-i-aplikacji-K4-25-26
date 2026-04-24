@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../Tw.-stron-i-aplikacji-K4-25-26/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@87.5,200..900&display=swap" rel="stylesheet">    
 </head>
 <body>
 
@@ -15,13 +15,13 @@
 <?php 
 $dir_path = getcwd();
 $curr_dir_name = basename($dir_path);
-$test = dirname($dir_path);
+$test = dirname($dir_path, 1);
 echo $test
 ?>
 
 <header>
 
-<h1>Zawartosc folderu <?= $dir_path ?></h1>
+<h1>Zawartość folderu <?= $dir_path ?></h1>
 
 </header>
 
@@ -32,13 +32,24 @@ echo $test
         $files = scandir($curr_folder);
         foreach($files as $file) {
             if($file != "." && $file != '.git') {
-                if($file == '..')
-                    echo "<br><a href=/$curr_dir_name/" . $file . ">Wróć</a><hr><br>";
-                else
-                    echo "<a href=/$curr_dir_name/" . $file . ">$file</a><hr>";
+                if($file == '..'){
+                    echo "<br><hr><a href=/$curr_dir_name/" . $file . ">Wróć</a><hr><br>";
+                }
+                else{
+                    echo "<hr><a href=/$curr_dir_name/" . $file . ">$file</a><hr>";
+                    $inside = scandir("$curr_folder/$file");
+                    foreach($inside as $inside_name)
+                        if(strpos($inside_name, '.') == false){
+                            null;
+                        }
+                        else{
+                        echo "<a href=\"$file/$inside_name\">$inside_name</a><br>";
+                        }
+                }
             }
         }
         ?>
+
 </div>
 </main>
 

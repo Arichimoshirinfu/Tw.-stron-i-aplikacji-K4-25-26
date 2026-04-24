@@ -18,3 +18,103 @@ Array
     [info] => im the fucking ahri main aaaa!
     [przdane] => zgodanadane
 )
+2026/04/24 09:03:22
+Array
+(
+    [nazwt] => asadasd
+    [opcja_pakowania] => folia
+    [pakowanie] => 2do5kg
+    [email] => asd@dddd
+    [info] =>     ajonfabngalehgbaegag
+    [przdane] => zgodanadane
+)
+2026/04/24 09:04:49
+Array
+(
+    [nazwt] => asadasd
+    [opcja_pakowania] => folia
+    [pakowanie] => 2do5kg
+    [email] => asd@dddd
+    [info] =>     ajonfabngalehgbaegag
+    [przdane] => zgodanadane
+)
+2026/04/24 09:56:51
+Array
+(
+    [nazwt] => jfg
+    [opcja_pakowania] => karton z usztywnieniem
+    [pakowanie] => od10do15kg
+    [email] => jy@fmu
+    [info] => fdiuhbzufdjizuidjfhixzduhgziudhgzdiufhg
+    [przdane] => zgodanadane
+)
+2026/04/24 09:58:53
+Array
+(
+    [nazwt] => jfg
+    [opcja_pakowania] => karton z usztywnieniem
+    [pakowanie] => od10do15kg
+    [email] => jy@fmu
+    [info] => fdiuhbzufdjizuidjfhixzduhgziudhgzdiufhg
+    [przdane] => zgodanadane
+)
+2026/04/24 10:01:07
+Array
+(
+    [nazwt] => awd
+    [opcja_pakowania] => Array
+        (
+            [0] => koperta
+            [1] => folia
+        )
+
+    [pakowanie] => od10do15kg
+    [email] => a@a
+    [info] => aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    [przdane] => zgodanadane
+)
+2026/04/24 10:45:03
+Array
+(
+    [nazwt] => aaaa
+    [opcja_pakowania] => Array
+        (
+            [0] => koperta
+            [1] => folia
+        )
+
+    [pakowanie] => 2kg
+    [email] => awdaw@adad
+    [info] => gssshsegsegsegsegsegsegsegsegsegs
+    [przdane] => zgodanadane
+)
+2026/04/24 10:47:26
+Array
+(
+    [nazwt] => aaaa
+    [opcja_pakowania] => Array
+        (
+            [0] => koperta
+            [1] => folia
+        )
+
+    [pakowanie] => 2kg
+    [email] => awdaw@adad
+    [info] => gssshsegsegsegsegsegsegsegsegsegs
+    [przdane] => zgodanadane
+)
+2026/04/24 10:47:42
+Array
+(
+    [nazwt] => aaaa
+    [opcja_pakowania] => Array
+        (
+            [0] => koperta
+            [1] => folia
+        )
+
+    [pakowanie] => 2kg
+    [email] => awdaw@adad
+    [info] => gssshsegsegsegsegsegsegsegsegsegs
+    [przdane] => zgodanadane
+)

@@ -8,7 +8,7 @@ body{
     position: relative;
 }
 h1{
-    font-family: "Tangerine";
+    font-family: "Inconsolata";
     font-size:40px;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.512);
@@ -23,10 +23,10 @@ div{
     text-align: center;
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.512);
     width:55%;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);
     position: absolute;
     left: 50%;
-    top: 500%;
+    top: 250%;*/
     padding:25px;
 
 }
