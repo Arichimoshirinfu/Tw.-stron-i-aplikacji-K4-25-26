@@ -8,79 +8,85 @@
 </head>
 <body>
     <?php 
-    $errnazwa = '';
-    $errpakowanie = '';
-    $errwaga = '';
-    $erremail = '';
-    $errdodat = '';
-    $errzgoda = '';
     $blad = False;
-    if($_SERVER['REQUEST_METHOD'] == 'POST')
-        if(empty($_POST['nazwt']))
-            $errnazwa = 'Podaj nazwę produktu';
-        if(empty($_POST['opcja_pakowania']))
-            $errpakowanie = 'Wybierz opcje pakowania';
-        if(empty($_POST['pakowanie']))
-            $errwaga = 'Określ przybliżoną wagę paczki';
     ?>
+
     <form action="" method="post">
 
     <label  for="nazwt">Nazwa towaru</label><span class=star> *</span><br>
-    <input type="text" name="nazwt" id="nazwt" value="<?= $_POST['nazwt'] ?? '' ?>" <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
-        if(empty($_POST['nazwt'])){ echo 'class="error"'; $blad = True;} ?>><br><span class="star"><?= $errnazwa ?></span><br>
+    <input type="text" name="nazwt" id="nazwt" value="<?= $_POST['nazwt'] ?? '' ?>" 
+    <?php 
+    if($_SERVER['REQUEST_METHOD'] == 'POST')
+        if(empty($_POST['nazwt'])){
+            echo 'class="error"';
+        }
+    
+    ?>><br><?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST')
+        if(empty($_POST['nazwt'])){ 
+            echo '<span class="star">Podaj nazwę towaru</span>';}
+    ?><br>
 
 
     
     <label for="opcja_pakowania">Wybierz opcje pakowania:</label><span class=star> *</span><br>
 
     <div <?php if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        if(empty($_POST['opcja_pakowania'])){ echo 'class="error"' ; $blad = True;}}?>
+                if(empty($_POST['opcja_pakowania'])){
+                     echo 'class="error"' ;
+                      $blad = True;
+                    }
+                }
+                      ?>
         >
 
     <input type="checkbox" name="opcja_pakowania[]" value="koperta" id="koperta" 
     <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
-        if(key_exists('koperta', $_POST['opcja_pakowania']))
+            if(isset($_POST['opcja_pakowania']) && in_array('koperta', $_POST['opcja_pakowania']))
             echo 'checked';
         ?>>
     <label for="koperta">koperta</label><br>
 
     <input type="checkbox" name="opcja_pakowania[]" value="folia" id="folia" 
     <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
-            if(in_array('folia', $_POST['opcja_pakowania']))
+            if(isset($_POST['opcja_pakowania']) && in_array('folia', $_POST['opcja_pakowania']))
             echo 'checked'
             ?>>
     <label for="folia">folia</label><br>
 
     <input type="checkbox" name="opcja_pakowania[]" value="folia bąbelkowa" id="folia bąbelkowa"
     <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
-            if(in_array('folia bąbelkowa', $_POST['opcja_pakowania']))
+            if(isset($_POST['opcja_pakowania']) && in_array('folia bąbelkowa', $_POST['opcja_pakowania']))
             echo 'checked'
             ?>>
     <label for="folia bąbelkowa">folia bąbelkowa</label><br>
 
     <input type="checkbox" name="opcja_pakowania[]" value="karton" id="karton"
     <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
-            if(in_array('karton', $_POST['opcja_pakowania']))
+            if(isset($_POST['opcja_pakowania']) && in_array('karton', $_POST['opcja_pakowania']))
             echo 'checked'
             ?>>
     <label for="karton">karton</label><br>
 
     <input type="checkbox" name="opcja_pakowania[]" value="karton z usztywnieniem" id="kartonplus"
     <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
-            if(in_array('karton z usztywnieniem', $_POST['opcja_pakowania']))
+            if(isset($_POST['opcja_pakowania']) && in_array('karton z usztywnieniem', $_POST['opcja_pakowania']))
             echo 'checked'
             ?>>
     <label for="kartonplus">karton z usztywnieniem</label>
     
     </div>
     <?php if($_SERVER['REQUEST_METHOD'] == 'POST')
-        if(empty($_POST['opcja_pakowania'])) echo '<span class="star">Wybierz opcję pakowania</span>'; ?><br>
-    <br>
+        if(empty($_POST['opcja_pakowania']))
+            echo '<span class="star">Wybierz opcję pakowania</span>'; ?>
+            <br><br>
 
 
     <div <?php if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        if(empty($_POST['pakowanie'])){ echo 'class="error"'; $blad = True;}} ?>
-        >
+        if(empty($_POST['pakowanie'])){
+             echo 'class="error"';
+             $blad = True;}} 
+             ?>>
     <label for="pakowanie">Podaj wagę paczki:</label><span class=star> *</span><br>
 
     <input type="radio" name="pakowanie" value="2kg" id="2kg" 

@@ -118,3 +118,34 @@ Array
     [info] => gssshsegsegsegsegsegsegsegsegsegs
     [przdane] => zgodanadane
 )
+2026/04/24 14:27:46
+Array
+(
+    [nazwt] => aaaaaaa
+    [opcja_pakowania] => Array
+        (
+            [0] => folia bąbelkowa
+            [1] => karton
+            [2] => karton z usztywnieniem
+        )
+
+    [pakowanie] => 2do5kg
+    [email] => aok@aowdk
+    [info] => aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    [przdane] => zgodanadane
+)
+2026/04/24 14:49:48
+Array
+(
+    [nazwt] => awd
+    [opcja_pakowania] => Array
+        (
+            [0] => koperta
+            [1] => folia
+        )
+
+    [pakowanie] => 2do5kg
+    [email] => aok@aowdk
+    [info] => aaaaaaaaaaaaaaaaaaaa
+    [przdane] => zgodanadane
+)
