@@ -37,13 +37,13 @@ echo $test
                 }
                 else{
                     echo "<hr><a href=/$curr_dir_name/" . $file . ">$file</a><hr>";
-                    $inside = scandir("$curr_folder/$file");
-                    foreach($inside as $inside_name)
-                        if(strpos($inside_name, '.') == false){
-                            null;
-                        }
-                        else{
-                        echo "<a href=\"$file/$inside_name\">$inside_name</a><br>";
+                    ;
+                        if(strpos($file, '.') == false){
+                            $file_infile = scandir("$curr_folder/$file");
+                                foreach($file_infile as $file_infile_name)
+                                    if($file_infile_name == '.' || $file_infile_name == '..'){}
+                                        else
+                                    echo "<a href=\"$file/$file_infile_name\">$file_infile_name</a><br>";
                         }
                 }
             }
