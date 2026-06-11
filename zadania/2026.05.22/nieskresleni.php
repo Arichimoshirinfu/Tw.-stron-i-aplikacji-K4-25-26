@@ -26,9 +26,11 @@
     SELECT 	CONCAT(czytelnicy.Imie, " ", czytelnicy.Nazwisko) AS "czytelnik",
 		czytelnicy.Plec,
         czytelnicy.Data_ur,
-        CONCAT(czytelnicy.Ulica, " ", czytelnicy.Kod, " ", czytelnicy.Miasto) AS "adres",
+        czytelnicy.Ulica AS "ulica",
+        czytelnicy.Miasto AS "miasto",
         czytelnicy.Nr_legitymacji,
-        czytelnicy.Data_zapisania
+        czytelnicy.Data_zapisania,
+        czytelnicy.Kod AS "kod"
 FROM czytelnicy
 WHERE czytelnicy.Data_skreslenia IS NULL
 ORDER BY Nr_legitymacji ASC;
@@ -49,18 +51,24 @@ ORDER BY Nr_legitymacji ASC;
 
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_assoc($result)){
-            $test = if($row["Plec"] == "M"){echo "mężczyzna"} else {echo "kobieta"};
-        echo "<tr>";
-        echo "<td>" . $row["czytelnik"] . "</td>" . 
-        "<td>" . $test . "</td>" . 
-        "<td>" . $row["Data_ur"] . "</td>" . 
-        "<td>" . $row["adres"] . "</td>" . 
-        "<td>" . $row["Nr_legitymacji"] . "</td>" . 
-        "<td>" . $row["Data_zapisania"] . "</td>";
-        echo "</tr>";
+            if($row["Plec"] === "M"){
+                $plec = "mężczyzna";
+            } else {
+                $plec = "kobieta";
+            }
+            $kod_split = str_split($row['kod']);
+            $kod_poczt = $kod_split[0] .  $kod_split[1] . $kod_split[2] . "-" .  $kod_split[3] .  $kod_split[4];
+            echo "<tr>";
+            echo "<td>" . $row["czytelnik"] . "</td>" . 
+            "<td>" . $plec . "</td>" . 
+            "<td>" . $row["Data_ur"] . "</td>" . 
+            "<td>" . $row["ulica"] . " " . $kod_poczt . " " . $row['miasto'] . "</td>" . 
+            "<td>" . $row["Nr_legitymacji"] . "</td>" . 
+            "<td>" . $row["Data_zapisania"] . "</td>";
+            echo "</tr>";
         }
     }
-    else{
+    else {
         echo "Brak danych";
     }
 
