@@ -16,7 +16,6 @@
     $database = 'brozyna';
 
     $conn = mysqli_connect($localhost, $user, $password, $database);
-    echo "<h3>Sposób 1</h3>";
     if(!$conn)
         echo "Połączenie z bazą nieudane, kod błędu:" . mysqli_connect_errno();
     else
@@ -57,12 +56,12 @@ ORDER BY Nr_legitymacji ASC;
                 $plec = "kobieta";
             }
             $kod_split = str_split($row['kod']);
-            $kod_poczt = $kod_split[0] .  $kod_split[1] . $kod_split[2] . "-" .  $kod_split[3] .  $kod_split[4];
+            $kod_poczt = $kod_split[0] .  $kod_split[1] . "-" . $kod_split[2] .  $kod_split[3] .  $kod_split[4];
             echo "<tr>";
             echo "<td>" . $row["czytelnik"] . "</td>" . 
             "<td>" . $plec . "</td>" . 
             "<td>" . $row["Data_ur"] . "</td>" . 
-            "<td>" . $row["ulica"] . " " . $kod_poczt . " " . $row['miasto'] . "</td>" . 
+            "<td>" . $row["ulica"] . " <br>" . $kod_poczt . " " . $row['miasto'] . "</td>" . 
             "<td>" . $row["Nr_legitymacji"] . "</td>" . 
             "<td>" . $row["Data_zapisania"] . "</td>";
             echo "</tr>";
