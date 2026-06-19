@@ -31,19 +31,21 @@ echo $test
         $curr_folder = ".";
         $files = scandir($curr_folder);
         foreach($files as $file) {
-            if($file != "." && $file != '.git') {
+            if($file != "." && $file != '.git' && ($file !== "style.css" && $file !== "index.php")) {
                 if($file == '..'){
                     echo "<br><hr><a href=/$curr_dir_name/" . $file . ">Wróć</a><hr><br>";
                 }
                 else{
-                    echo "<hr><a href=/$curr_dir_name/" . $file . ">$file</a><hr>";
-                    ;
+                    echo "<hr>&#8595; <a href=/$curr_dir_name/" . $file . ">$file</a> &#8595;<hr>";
                         if(strpos($file, '.') == false){
                             $file_infile = scandir("$curr_folder/$file");
-                                foreach($file_infile as $file_infile_name)
-                                    if($file_infile_name == '.' || $file_infile_name == '..'){}
-                                        else
-                                    echo "<a href=\"$file/$file_infile_name\">$file_infile_name</a><br>";
+                            foreach($file_infile as $file_infile_name){
+                                if($file_infile_name != '.' && $file_infile_name != '..'){
+                                    echo '<table><tr><td>' .
+                                    "<a href=\"$file/$file_infile_name\">$file_infile_name</a><br>" .
+                                    "</td></tr></table>";
+                                }
+                            }
                         }
                 }
             }

@@ -23,15 +23,13 @@ div{
     text-align: center;
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.512);
     width:55%;
-    /*transform: translate(-50%, -50%);
-    position: absolute;
-    left: 50%;
-    top: 250%;*/
     padding:25px;
+    margin: auto;
 
 }
 a{
     text-decoration: none;
+    font-size: smaller;
 }
 a:hover{
     color:orange
@@ -39,3 +37,14 @@ a:hover{
 hr{
     width:50%;
 }
+table{
+    border-collapse: collapse;
+    margin:auto;
+    width:100%;
+}
+ tr,th,td{
+    border: 1px solid white;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+} 
